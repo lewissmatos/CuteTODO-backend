@@ -16,6 +16,7 @@ const UserSchema = Schema({
         default: '00/00/0000'
     },
     grandfather: {
+        required: [true, 'Solo existen 2 padrinos, Lewis y Eiron'],
         type: String,
         enum: ['Lewis', 'Eiron']
     }
